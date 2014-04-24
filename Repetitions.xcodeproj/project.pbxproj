@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		373FD9AB190715650094E084 /* ExerciseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 373FD9AA190715650094E084 /* ExerciseTableViewCell.m */; };
+		37773BA31909AC9C009ED3B5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37773BA51909AC9C009ED3B5 /* Localizable.strings */; };
 		37C676FB18FC798500D7644F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C676FA18FC798500D7644F /* Foundation.framework */; };
 		37C676FD18FC798500D7644F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C676FC18FC798500D7644F /* CoreGraphics.framework */; };
 		37C676FF18FC798500D7644F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C676FE18FC798500D7644F /* UIKit.framework */; };
@@ -38,9 +39,11 @@
 /* Begin PBXFileReference section */
 		373FD9A9190715650094E084 /* ExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableViewCell.h; sourceTree = "<group>"; };
 		373FD9AA190715650094E084 /* ExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewCell.m; sourceTree = "<group>"; };
-		37773B9E1909AA0A009ED3B5 /* ga */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/Main.strings; sourceTree = "<group>"; };
 		37773B9F1909AA0A009ED3B5 /* ga */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37773BA01909AA0A009ED3B5 /* ga */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37773BA41909AC9C009ED3B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37773BA61909AC9E009ED3B5 /* ga */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37773BAA1909CA04009ED3B5 /* ga */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/Main.strings; sourceTree = "<group>"; };
 		37C676F718FC798500D7644F /* Repetitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repetitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C676FA18FC798500D7644F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37C676FC18FC798500D7644F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +135,7 @@
 				37C6770118FC798500D7644F /* Supporting Files */,
 				373FD9A9190715650094E084 /* ExerciseTableViewCell.h */,
 				373FD9AA190715650094E084 /* ExerciseTableViewCell.m */,
+				37773BA51909AC9C009ED3B5 /* Localizable.strings */,
 			);
 			path = Repetitions;
 			sourceTree = "<group>";
@@ -247,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37C6771318FC798500D7644F /* Images.xcassets in Resources */,
+				37773BA31909AC9C009ED3B5 /* Localizable.strings in Resources */,
 				37C6770518FC798500D7644F /* InfoPlist.strings in Resources */,
 				37C6770E18FC798500D7644F /* Main.storyboard in Resources */,
 			);
@@ -294,6 +299,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		37773BA51909AC9C009ED3B5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37773BA41909AC9C009ED3B5 /* Base */,
+				37773BA61909AC9E009ED3B5 /* ga */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		37C6770318FC798500D7644F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -307,7 +321,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				37C6770D18FC798500D7644F /* Base */,
-				37773B9E1909AA0A009ED3B5 /* ga */,
+				37773BAA1909CA04009ED3B5 /* ga */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
