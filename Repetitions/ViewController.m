@@ -39,12 +39,25 @@
     self.repetitions = 10;
     self.repetitionsStepper.value = self.repetitions;
     
+    [self setup];
+}
+
+- (void)setup
+{
     self.startButton.layer.cornerRadius = self.startButton.bounds.size.height / 2;
     self.saveButton.layer.cornerRadius = self.saveButton.bounds.size.height / 2;
     self.repetitionsView.layer.cornerRadius = self.repetitionsView.bounds.size.height / 2;
     self.repetitionsToGoView.layer.cornerRadius = self.repetitionsToGoView.bounds.size.height / 2;
     self.clearButton.layer.cornerRadius = self.clearButton.bounds.size.height / 2;
 }
+
+- (void)vibrateDevice
+{
+    AudioServicesPlaySystemSound (1350); //RingerVibeChanged, works if currently silent.
+    AudioServicesPlaySystemSound (1351); //SilentVibeChanged, works if currently NOT silent.
+}
+
+#pragma mark - IBActions
 
 - (IBAction)stepperValueChanged:(UIStepper *)sender
 {
@@ -75,19 +88,13 @@
     }
     
     if (self.exercise.repetitionsToGo == 0) {
-        [self vibrate];
+        [self vibrateDevice];
         [self.exercise stop];
         [self.exercises addObject:self.exercise];
         [self removeObservers];
         self.exercise = nil;
         [self.exercisesTableView reloadData];
     }
-}
-
-- (void)vibrate
-{
-    AudioServicesPlaySystemSound (1350); //RingerVibeChanged, works if currently silent.
-    AudioServicesPlaySystemSound (1351); //SilentVibeChanged, works if currently NOT silent.
 }
 
 #pragma mark - UITableView
@@ -107,7 +114,10 @@
     dateFormatter.dateFormat = @"HH:mm:ss";
     NSString *timeString = [dateFormatter stringFromDate:exercise.finishDate];
     
-    cell.repetitionsLabel.text = [NSString stringWithFormat:@"%d", exercise.repetitions];
+    cell.repetitionsLabel.text = [NSString stringWithFormat:@"%d %@",
+                                  exercise.repetitions,
+                                  NSLocalizedString(@"Repetitions", @"Repetitions")];
+    
     cell.timeLabel.text = timeString;
     
     return cell;
