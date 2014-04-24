@@ -1,0 +1,24 @@
+
+/* Class = "IBUILabel"; text = "exercise routine"; ObjectID = "7Ev-QK-HCW"; */
+"7Ev-QK-HCW.text" = "exercise routine";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "9HN-eH-ZJ5"; */
+"9HN-eH-ZJ5.text" = "Title";
+
+/* Class = "IBUILabel"; text = "0"; ObjectID = "KDG-9O-AHK"; */
+"KDG-9O-AHK.text" = "0";
+
+/* Class = "IBUIButton"; normalTitle = "clear"; ObjectID = "KWA-jw-fUZ"; */
+"KWA-jw-fUZ.normalTitle" = "clear";
+
+/* Class = "IBUIButton"; normalTitle = "start"; ObjectID = "SfI-3x-c6Y"; */
+"SfI-3x-c6Y.normalTitle" = "start";
+
+/* Class = "IBUILabel"; text = "10"; ObjectID = "byk-Cz-hfs"; */
+"byk-Cz-hfs.text" = "10";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "x0f-a3-Etd"; */
+"x0f-a3-Etd.text" = "Title";
+
+/* Class = "IBUIButton"; normalTitle = "save"; ObjectID = "zBG-W1-oyK"; */
+"zBG-W1-oyK.normalTitle" = "save";

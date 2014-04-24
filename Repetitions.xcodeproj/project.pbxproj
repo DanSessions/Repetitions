@@ -38,6 +38,9 @@
 /* Begin PBXFileReference section */
 		373FD9A9190715650094E084 /* ExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableViewCell.h; sourceTree = "<group>"; };
 		373FD9AA190715650094E084 /* ExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewCell.m; sourceTree = "<group>"; };
+		37773B9E1909AA0A009ED3B5 /* ga */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/Main.strings; sourceTree = "<group>"; };
+		37773B9F1909AA0A009ED3B5 /* ga */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37773BA01909AA0A009ED3B5 /* ga */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37C676F718FC798500D7644F /* Repetitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repetitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C676FA18FC798500D7644F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37C676FC18FC798500D7644F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -209,6 +212,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Dan Sessions";
 				TargetAttributes = {
+					37C676F618FC798500D7644F = {
+						DevelopmentTeam = QL8D9P64GK;
+					};
 					37C6771718FC798500D7644F = {
 						TestTargetID = 37C676F618FC798500D7644F;
 					};
@@ -221,6 +227,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"ga-IE",
+				ga,
 			);
 			mainGroup = 37C676EE18FC798500D7644F;
 			productRefGroup = 37C676F818FC798500D7644F /* Products */;
@@ -290,6 +298,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				37C6770418FC798500D7644F /* en */,
+				37773B9F1909AA0A009ED3B5 /* ga */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -298,6 +307,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				37C6770D18FC798500D7644F /* Base */,
+				37773B9E1909AA0A009ED3B5 /* ga */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -306,6 +316,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				37C6772318FC798500D7644F /* en */,
+				37773BA01909AA0A009ED3B5 /* ga */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -388,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Repetitions/Repetitions-Prefix.pch";
 				INFOPLIST_FILE = "Repetitions/Repetitions-Info.plist";
@@ -401,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Repetitions/Repetitions-Prefix.pch";
 				INFOPLIST_FILE = "Repetitions/Repetitions-Info.plist";
