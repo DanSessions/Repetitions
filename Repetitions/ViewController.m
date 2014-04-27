@@ -45,10 +45,20 @@
 - (void)setup
 {
     self.startButton.layer.cornerRadius = self.startButton.bounds.size.height / 2;
+    self.startButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.startButton.layer.borderWidth = 3.0f;
+    
     self.saveButton.layer.cornerRadius = self.saveButton.bounds.size.height / 2;
+    self.saveButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.saveButton.layer.borderWidth = 2.0f;
+    
+    self.clearButton.layer.cornerRadius = self.clearButton.bounds.size.height / 2;
+    self.clearButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.clearButton.layer.borderWidth = 2.0f;
+    
     self.repetitionsView.layer.cornerRadius = self.repetitionsView.bounds.size.height / 2;
     self.repetitionsToGoView.layer.cornerRadius = self.repetitionsToGoView.bounds.size.height / 2;
-    self.clearButton.layer.cornerRadius = self.clearButton.bounds.size.height / 2;
+    
 }
 
 - (void)vibrateDevice
@@ -154,11 +164,11 @@
     
     if ([keyPath isEqualToString:@"exercise.started"]) {
         if (self.exercise.started) {
-            NSString *title = NSLocalizedString(@"done", "Done");
+            NSString *title = NSLocalizedString(@"Done", "Done");
             [self.startButton setTitle:title forState:UIControlStateNormal];
         }
         else {
-            NSString *title = NSLocalizedString(@"start", "Start");
+            NSString *title = NSLocalizedString(@"Start", "Start");
             [self.startButton setTitle:title forState:UIControlStateNormal];
         }
         return;

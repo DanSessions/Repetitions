@@ -49,7 +49,6 @@
 		37C676FC18FC798500D7644F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		37C676FE18FC798500D7644F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37C6770218FC798500D7644F /* Repetitions-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Repetitions-Info.plist"; sourceTree = "<group>"; };
-		37C6770418FC798500D7644F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37C6770618FC798500D7644F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37C6770818FC798500D7644F /* Repetitions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Repetitions-Prefix.pch"; sourceTree = "<group>"; };
 		37C6770918FC798500D7644F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,7 +60,6 @@
 		37C6771818FC798500D7644F /* RepetitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepetitionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C6771918FC798500D7644F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		37C6772118FC798500D7644F /* RepetitionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RepetitionsTests-Info.plist"; sourceTree = "<group>"; };
-		37C6772318FC798500D7644F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37C6772518FC798500D7644F /* RepetitionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepetitionsTests.m; sourceTree = "<group>"; };
 		37C6773218FC7DCE00D7644F /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise.h; sourceTree = "<group>"; };
 		37C6773318FC7DCE00D7644F /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercise.m; sourceTree = "<group>"; };
@@ -311,7 +309,6 @@
 		37C6770318FC798500D7644F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				37C6770418FC798500D7644F /* en */,
 				37773B9F1909AA0A009ED3B5 /* ga */,
 			);
 			name = InfoPlist.strings;
@@ -329,7 +326,6 @@
 		37C6772218FC798500D7644F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				37C6772318FC798500D7644F /* en */,
 				37773BA01909AA0A009ED3B5 /* ga */,
 			);
 			name = InfoPlist.strings;

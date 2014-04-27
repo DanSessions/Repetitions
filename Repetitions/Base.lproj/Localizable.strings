@@ -6,5 +6,6 @@
   Copyright (c) 2014 Dan Sessions. All rights reserved.
 */
 
-"done" = "done";
-"start" = "start";
+"Done" = "done";
+"Start" = "start";
+"Repetitions" = "repetitions";
